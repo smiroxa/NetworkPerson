@@ -1,11 +1,9 @@
 package dal;
 
-
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ListIterator;
 import org.apache.log4j.Logger;
-
 import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
@@ -13,10 +11,9 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 import org.hibernate.cfg.Configuration;
-
 import model.Person;
 
-
+//http://javastudy.ru/hibernate/hibernate-quick-start/
 public class H2HibernateImpl implements DataStorageInterface
 {
 
@@ -29,6 +26,7 @@ public class H2HibernateImpl implements DataStorageInterface
 		StandardServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder().configure().build();
 		sessionFactory = new MetadataSources(serviceRegistry).buildMetadata().buildSessionFactory();
 		session = sessionFactory.openSession();
+		log.debug("Create session factory and current session");
 	}
 
 	public void close()
@@ -41,8 +39,8 @@ public class H2HibernateImpl implements DataStorageInterface
 	public ArrayList<Person> read()
 	{
 		session.beginTransaction();
-		Query query = session.createQuery("from Person");
-		List<Person> pp  = query.list();
+		Query query = session.createQuery("from persons");
+		List pp  = query.list();
 		session.getTransaction().commit();
 		return (ArrayList<Person>) pp;
 	}
@@ -52,7 +50,7 @@ public class H2HibernateImpl implements DataStorageInterface
 	{
 		if(hasId(p))
 		{
-			log.warn("======== ID IS ALREADY EXISTS! =======");
+			return;
 		}
 		session.beginTransaction();
 		session.save(p);

@@ -20,15 +20,16 @@ public class TableModel extends AbstractTableModel
 //		this.dataStorageInterface = new MySQLImpl();
 //		this.dataStorageInterface = new XMLImpl();
 //		this.dataStorageInterface = new JsonImpl();
-		this.dataStorageInterface = new H2HibernateImpl();
-		//			Hibernate
+//		this.dataStorageInterface = new H2HibernateImpl();
+//			Hibernate
 //			NetConnect
 //			CSV
 //			Yaml
-//			MongoDB ( Document oriented database )
-//			Redis ( key value )
+//		this.dataStorageInterface = new MongoDBImpl();
+		this.dataStorageInterface = new	RedisImpl();
 //			Casandra ( column )
 //			Neo4j ( graph )
+		log.debug("create instance connection to DB");
 	}
 
 	@Override

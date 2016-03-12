@@ -1,0 +1,27 @@
+2016-03-11 18:42:36 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 19:41:26 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 19:48:13 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 19:48:37 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 19:50:31 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 19:51:00 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 20:07:07 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 20:23:23 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 20:27:47 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 20:31:45 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 20:55:35 DEBUG RedisImpl:16 - Server is running: PONG
+2016-03-11 20:55:35 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 21:30:41 DEBUG RedisImpl:18 - Server is running: PONG
+2016-03-11 21:30:41 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 21:33:29 DEBUG RedisImpl:18 - Server is running: PONG
+2016-03-11 21:33:29 DEBUG TableModel:32 - create instance connection to DB
+2016-03-11 21:33:46 DEBUG RedisImpl:32 - create person - Person [id=1, fname=1, lname=1, age=1]
+2016-03-12 09:21:46 DEBUG RedisImpl:19 - Server is running: PONG
+2016-03-12 09:21:46 DEBUG TableModel:32 - create instance connection to DB
+2016-03-12 09:21:51 DEBUG RedisImpl:30 - read all person - 1
+2016-03-12 09:21:51 DEBUG RedisImpl:30 - read all person - ping
+2016-03-12 10:14:12 DEBUG RedisImpl:19 - Server is running: PONG
+2016-03-12 10:14:12 DEBUG TableModel:32 - create instance connection to DB
+2016-03-12 10:14:17 DEBUG RedisImpl:31 - read all person - 1
+2016-03-12 10:14:17 DEBUG RedisImpl:32 - current person - Person [id=1, fname=1, lname=1, age=1]
+2016-03-12 10:14:17 DEBUG RedisImpl:31 - read all person - ping
+2016-03-12 10:14:17 DEBUG RedisImpl:32 - current person - pong
